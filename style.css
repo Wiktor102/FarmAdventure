@@ -32,7 +32,6 @@ button{
 
 button:hover{
     border: 5px solid #ffffff;
-    background-color: #f8d122;
 }
 
 hr{
@@ -48,6 +47,14 @@ hr{
 
 }
 
+#b3{
+    border-color: #41abd1;
+    background-color: #41abd1;
+}
+
+#b3:hover{
+    border: 5px solid #ffffff;
+}
 
 
 
