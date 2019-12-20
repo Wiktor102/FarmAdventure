@@ -34,7 +34,7 @@ button:hover{
     border: 5px solid #ffffff;
 }
 
-hr{
+#hl{
     border: 3px solid #f8d122;
     margin: 10px;
     width: 450px;
@@ -48,12 +48,24 @@ hr{
 }
 
 #b3{
-    border-color: #41abd1;
+    border: 5px solid#41abd1;
     background-color: #41abd1;
+    position: relative;
 }
 
 #b3:hover{
     border: 5px solid #ffffff;
+}
+
+#b3::before{
+    border: 3px solid #41abd1;
+    width: 0;
+    height: 50px;
+    content: '';
+    position: absolute;
+    display: block;
+    right: 154px;
+    top: 0;
 }
 
 
