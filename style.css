@@ -36,7 +36,7 @@ button:hover{
 }
 
 hr{
-    border-color: #f8d122;
+    border: 3px solid #f8d122;
     margin: 10px;
     width: 450px;
     margin-left: auto;
