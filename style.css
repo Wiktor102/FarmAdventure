@@ -26,7 +26,7 @@ button{
     background-color: #f8d122;
     width: 150px;
     height: 50px;
-    margin: 10px;
+    margin: 20px;
     padding: 5px;
 }
 
@@ -64,7 +64,7 @@ button:hover{
     content: '';
     position: absolute;
     display: block;
-    right: 154px;
+    right: 165px;
     top: 0;
 }
 
