@@ -12,39 +12,41 @@ var height = canv.height;
 var fieldX = 50;
 
 function clear() {
-    for(var i = 0; i <= (width - 50); i += 50){
+    for (var i = 0; i <= (width - 50); i += 50) {
 
-        for(var j = 0; j <= (height - 50); j += 50){
-            ctx.drawImage(grass,i,j,50,50)
+        for (var j = 0; j <= (height - 50); j += 50) {
+            ctx.drawImage(grass, i, j, 50, 50)
         }
     }
 }
 
+function drawField(img, x, y, w, h) {
+    for (var i = x; i < ((fieldX + w)); i += 50) {
 
-
-function drawField(img,x,y,w,h) {
-    for(var i = x; i <= ((fieldX + w) - 50); i += 50){
-
-        for(var j = y; j <= h - 50; j += 50){
-            ctx.drawImage(img,i,j,50,50)
+        for (var j = y; j <= h - 50; j += 50) {
+            ctx.drawImage(img, i, j, 50, 50)
         }
     }
 }
 
-function fieldSize(size){
-    if(size == 1){
-        if (fieldX < width - 250) {
-            drawField(field,fieldX,50,200,450);
+function fieldSize(size) {
+    if (size == 1) {
+
+        if (fieldX + 200 <= width - 50) {
+            drawField(field, fieldX, 50, 200, 450);
             fieldX += 250;
-        }else{
-            alert('Nie można zbudować poza mapą!');
+        } else {
+            alert("Nie można zbudować poza mapą!");
         }
-    }else if (size == 2){
-        if (fieldX < width - 350) {
-            drawField(field,fieldX,50,300,450);
+
+    } else if (size == 2) {
+
+        if (fieldX + 300 <= width - 50) {
+            drawField(field, fieldX, 50, 300, 450);
             fieldX += 350;
-        }else{
-            alert('Nie można zbudować poza mapą!');
+        } else {
+            alert("Nie można zbudować poza mapą!");
         }
+
     }
 }
